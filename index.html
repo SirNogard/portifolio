@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    
+    <title>Portifolio</title>
+</head>
+
+<body>
+                                <!-- TOPO DE PAGINA --> 
+    <nav id="desktop-nav">
+        <div class="logo"></div>
+        <div>
+            <ul class="links">
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#XP">Experiências</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contatos">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+                                <!-- MENU HAMBURGUER -->
+    <nav id="hamburguer">
+        <div class="logo"></div>
+        <div class="hamburguer-menu">
+            <div class="hamburguer-icon" onclick="ToggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#sobre" onclick="ToggleMenu()">Sobre mim</a></li>
+                <li><a href="#XP" onclick="ToggleMenu()">Experiências</a></li>
+                <li><a href="#projetos" onclick="ToggleMenu()">Projetos</a></li>
+                <li><a href="#contatos" onclick="ToggleMenu()">Contato</a></li>
+            </div>
+        </div>
+    </nav>
+                                <!-- SEÇÃO PERFIL --> 
+    <section id="profile">
+
+        <div class="section__pic-container">
+            <img src="img/OIG3.jpeg" alt="foto de perfil">
+        </div>
+        <div class="section-text">
+            <p class="section-text-1">Ola, Eu sou</p>
+            <p class="title">Renan Ribeiro</p>
+            <p class="section-text-2">Web Developer</p>
+        
+                <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('resume.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='#contato'">Contato</button>
+                </div>   
+        
+                <div class="sociais-container">
+                    <img src="icon/linkedin-in.svg" alt="Linkedin Profile" class="icon" onclick="location.href="https://www.linkedin.com/in/renan-ribeiro-4bb7b2199/">
+                    <img src="icon/github.svg" alt="Github Profile" class="icon" onclick="location.href="hhttps://github.com/SirNogard">
+                </div>
+        </div>
+    </section>
+                                 <!-- SEÇÃO SOBRE MIM --> 
+    <section id="sobre">
+
+            <p class="section-text-1">Veja aqui para saber mais</p>
+
+            <h1 class="title">Sobre mim</h1>
+            
+            <div class="section-container">
+                <!-- FOTO -->
+                <div class="section__pic-container">
+                    <img src="img/OIG4.jpeg" alt="foto do perfil" class="about-me"/>
+                </div>
+                <!-- ABOUT ME -->
+            
+                <div class="sobre-detalhes-container">
+                    <div class="sobre-container">
+                        <div class="detalhes-container">
+                            <img src="icon/xp.png" alt="experiencia" class="icon"/>
+                            <h3>Experiencia</h3>
+                            <p>Desenvolvedor Web iniciante</p>  
+                        </div>
+            
+                        <div class="detalhes-container">
+                            <img src="icon/study.png" alt="educação" class="icon"/>
+                            <h3>Educação</h3>
+                            <p>Universidade Estacio<br/>Analise de Sistemas - 1° sem.</p>
+                        </div>
+                    </div>
+            
+                    <div class="text-container">
+                        <p>Estudante de graduação em Analise e Desenvolvimento de Sistemas pela Universidade Estácio, tenho diversos outros cursos extra-curriculares em plataformas como Udemy e estou em busca de aprofundamento academico e profissional.</p>
+                    </div>
+                </div>
+            <div>
+            <img src="icon/arrow.svg" alt="" class="arrow" onclick="location.href='#XP'">
+            </div>
+    </section>
+                                <!-- SEÇÃO EXPERIENCIAS --> 
+    <section id="XP">
+
+        <p class="section-text-1">Saiba mais aqui sobre minhas</p>
+
+        <h1 class="title">Experiencia</h1>
+
+        <div class="xp-detalhes-container">
+            <div class="sobre-container">
+                <div class="detalhes-container">
+                    <h2 class="xp-subtitulo">Front-end Dev</h2>
+                    <div class="artigo-container">
+                        <article>
+                            <img src="icon/square-check-solid.svg" alt="experiências" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Intermediario</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="icon/square-check-solid.svg" alt="experiências" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Intermediario</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="icon/square-check-solid.svg" alt="experiências" class="icon">
+                            <div>
+                                <h3>UX Design</h3>
+                                <p>Basico</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            <div class="detalhes-container">
+                    <h2 class="xp-subtitulo">Web Developer</h2>
+                    <div class="artigo-container">
+                        <article>
+                            <img src="icon/square-check-solid.svg" alt="experiências" class="icon">
+                            <div>
+                                <h3>Javascript</h3>
+                                <p>Iniciante</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="icon/square-check-solid.svg" alt="experiências" class="icon">
+                            <div>
+                                <h3>Python</h3>
+                                <p>Iniciante</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="icon/arrow.svg" alt="" class="arrow" onclick="location.href='#projetos'">
+        </div>
+    </section>
+                                <!-- SEÇÃO PROJETOS -->
+    <section id="projetos">
+
+        <p class="section-text-1">Saiba mais aqui</p>
+
+        <h1 class="title">Projetos</h1>
+
+        <div class="xp-detalhes-container">
+            <div class="sobre-container">
+                <div class="detalhes-container cor-container">
+                    <div class="artigo-container">
+                        <img src="img/projeto.png" alt="projeto 1" class="projeto-img">
+                    </div>
+                    <h2 class="xp-subtitulo projeto-titulo">Projeto 1</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 projeto-btn" onclick="location.href='https://github.com/SirNogard/projeto-'">
+                            Github
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+                                <!-- SEÇÃO CONTATO -->
+    <section id="contatos">
+
+        <p class="section-text-1"">Como falar comigo</p>
+
+        <h1 class="title">Meus Contatos!</h1>
+
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="icon/envelope-solid.svg" alt="e-mail" class="icon contact-icon email-icon">
+                <p><a href="renan.ribeiro.jobs@outlook.com">renan.ribeiro.jobs@outlook.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="icon/linkedin-in.svg" alt="Linkedin" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/renan-ribeiro-4bb7b2199/">Meu perfil no LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+                                <!-- RODAPÉ -->
+    <footer>
+        <nav class="nav-links-container">
+            <ul class="links">
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#XP">Experiências</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contatos">Contato</a></li>
+            </ul>
+        </nav>
+        <p class="copy">Copyright &#169; Renan Ribeiro - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
